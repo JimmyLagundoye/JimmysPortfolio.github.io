@@ -1,0 +1,398 @@
+body {
+
+    font-family: 'Poppins', sans-serif;
+}
+
+section {
+
+
+    background-color: white;
+
+
+}
+
+.hero {
+    background-color: #1c1d25;
+    height: 100vh;
+    color: white;
+    font-size: 40px;
+
+}
+
+footer {
+
+
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 80px;
+
+
+}
+
+nav {
+
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+
+    display: flex;
+    list-style-type: none;
+    width: 500px;
+    justify-content: space-around;
+    font-size: 30px;
+}
+
+ul.show {
+
+    display: block;
+}
+
+
+li {
+    /* width: 200px; */
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 90px;
+    margin: 0%;
+}
+
+h2 {
+    font-size: 50px;
+    margin: 0%;
+}
+
+p {
+    margin: 0%;
+    font-weight: 300;
+    font-size: 30px;
+}
+
+
+.subtext {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.hero-area {
+    display: flex;
+
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.hero-text {
+    margin-left: 80px;
+    margin-bottom: 200px;
+
+}
+
+.button {
+    width: 200px;
+    height: 55px;
+    border-radius: 25px;
+    background-color: coral;
+    text-align: center;
+    font-weight: 300;
+    font-size: 30px;
+    padding-top: 5px;
+    margin-top: 20px;
+}
+
+.button :hover {
+    background-color: #ef744b;
+}
+
+.button:active {
+    background-color: #a9a9a9;
+    color: #808080;
+}
+
+.socials {
+    padding-bottom: 200px;
+}
+
+.logo {
+    height: 80px;
+    margin: 20px;
+}
+
+.social {
+    margin: 20px;
+}
+
+.sub-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 80px;
+}
+
+.sub-section-alternative {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 80px;
+
+
+}
+
+.headshot {
+    width: 300px;
+    border-radius: 150px;
+}
+
+.headshot-container {
+    display: flex;
+    align-items: center;
+}
+
+.project-card {
+
+    width: 300px;
+    height: 650px;
+    /* border: 1px solid black; */
+    box-shadow: 5px 5px 20px grey;
+    margin: 10px;
+}
+
+.project-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+@media only screen and (max-width: 1000px) {
+    .project-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+
+
+.project-image {
+    margin-top: 25px;
+    width: 250px;
+    border-radius: 125px;
+}
+
+hr {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.project-link {
+    text-decoration: none;
+    color: #ef744b;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.hamburger {
+    display: none;
+    */
+}
+
+/* .hamburger:focus {
+    outline: 0;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .hamburger {
+        display: block;
+        border: 0;
+        background-color: transparent;
+        color: white;
+        font-size: 30px;
+        margin: 20px;
+        align-self: flex-end;
+
+    }
+
+
+}
+
+ul {
+    display: none;
+    background-color: #2b2d37;
+    margin: 0px;
+}
+
+ul.show {
+    display: block;
+}
+
+/* nav {
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: #2b2d37;
+} */
+
+
+
+h2 {
+    margin: .25rem;
+}
+
+div.container {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    padding: 1rem;
+    background-color: skyblue;
+}
+
+#coin {
+    position: relative;
+    width: 15rem;
+    height: 15rem;
+    margin: 2rem 0rem;
+    transform-style: preserve-3d;
+}
+
+#coin div {
+    width: 100%;
+    height: 100%;
+    border: 2px solid gold;
+    border-radius: 50%;
+    backface-visibility: hidden;
+    background-size: contain;
+    position: absolute;
+}
+
+.heads {
+    background-image: url("https://en.numista.com/catalogue/photos/royaume-uni/5f2aa0499e8b01.53954695-original.jpg");
+}
+
+.animate-heads {
+    animation: flipHeads 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes flipHeads {
+    from {
+        transform: rotateX(0deg);
+    }
+
+    to {
+        transform: rotateX(1800deg);
+    }
+}
+
+.tails {
+    background-image: url("https://en.numista.com/catalogue/photos/royaume-uni/5f2aa04a1e44c9.60675031-original.jpg");
+    transform: rotateX(-180deg);
+}
+
+.animate-tails {
+    animation: flipTails 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes flipTails {
+    from {
+        transform: rotateX(0deg);
+    }
+
+    to {
+        transform: rotateX(1620deg);
+    }
+}
+
+
+
+.glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, gold, #fcb072, #fffb00, #48ff00);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #3865f7;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+
+#status {
+
+    display: inline-block;
+}
+
+.table {
+
+    font-size: 2rem;
+    color: #ef744b;
+
+
+}
